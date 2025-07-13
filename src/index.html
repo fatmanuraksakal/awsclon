@@ -1,49 +1,225 @@
-<!doctype html>
+<!doctype html lang=tr>
 <html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple Benzeri Web Sitesi</title>
   <link href="./output.css" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="bg-[#f5f5f7]">
 
   <!--Navbar Start-->
-  <nav class="flex items-center justify-between px-8 py-3 border-b border-gray-300 text-sm">
-    <div>
-      <i class="fa-brands fa-apple"></i>
+  <nav class="flex items-center justify-between px-6 py-3 border-b border-gray-300 bg-white bg-opacity-70 backdrop-blur-md shadow-md sticky top-0 z-50 text-sm">
+    <div class="text-xl">
+      <a href="https://www.apple.com/tr/"> <i class="fa-brands fa-apple"></i></a>
     </div>
-
-    <div>
+    
+    <div class="hidden lg:block">
       <ul class="flex space-x-6">
-      <li><a href="#" class="hover:text-gray-500">Store</a></li>
-      <li><a href="#" class="hover:text-gray-500">Mac</a></li>
-      <li><a href="#" class="hover:text-gray-500">iPad</a></li>
-      <li><a href="#" class="hover:text-gray-500">iPhone</a></li>
-      <li><a href="#" class="hover:text-gray-500">Watch</a></li>
-      <li><a href="#" class="hover:text-gray-500">AirPods</a></li>
-      <li><a href="#" class="hover:text-gray-500">TV ve Ev</a></li>
-      <li><a href="#" class="hover:text-gray-500">Eğlence</a></li>
-      <li><a href="#" class="hover:text-gray-500">Aksesuarlar</a></li>
-      <li><a href="#" class="hover:text-gray-500">Destek</a></li>
+      <li><a href="https://www.apple.com/tr/store" class="hover:text-gray-500 transition">Store</a></li>
+      <li><a href="https://www.apple.com/tr/mac/" class="hover:text-gray-500 transition">Mac</a></li>
+      <li><a href="https://www.apple.com/tr/ipad/" class="hover:text-gray-500 transition">iPad</a></li>
+      <li><a href="https://www.apple.com/tr/iphone/" class="hover:text-gray-500 transition">iPhone</a></li>
+      <li><a href="https://www.apple.com/tr/watch/" class="hover:text-gray-500 transition">Watch</a></li>
+      <li><a href="https://www.apple.com/tr/airpods/" class="hover:text-gray-500 transition">AirPods</a></li>
+      <li><a href="https://www.apple.com/tr/tv-home/" class="hover:text-gray-500 transition">TV ve Ev</a></li>
+      <li><a href="https://www.apple.com/tr/services/" class="hover:text-gray-500 transition">Eğlence</a></li>
+      <li><a href="https://www.apple.com/tr/shop/accessories/all" class="hover:text-gray-500 transition">Aksesuarlar</a></li>
+      <li><a href="https://support.apple.com/tr-tr" class="hover:text-gray-500 transition">Destek</a></li>
     </ul>
     </div>
+    
+    <div class="flex items-center space-x-5 text-xl">
+      <a href="#" class="hover:text-gray-500"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="#" class="hover:text-gray-500"><i class="fa-solid fa-bag-shopping"></i></a>
 
-    <div class="flex items-center space-x-4">
-      <a href="#"><i class="fas fa-search"></i></a>
-      <a href="#"><i class="fas fa-bag-shopping"></i></a>
+      <button id="menu-button" class="lg:hidden focus:outline-none text-xl">
+            <i class="fas fa-bars"></i>
+        </button>
     </div>
   </nav>  
   <!--Navbar End-->
+  
+  <!--Header Start-->
+  <header class="relative w-full overflow-hidden">
+  <div class="w-full h-auto">
+    <img src="../img/header.png" alt="headerimg" class="w-full h-full object-cover">
+  </div>
+
+  <div class="absolute inset-x-0 bottom-10 flex justify-center z-10 px-4">
+    <a href="https://www.apple.com/tr-edu/store" class="inline-flex items-center justify-center px-6 py-3 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-300">
+    Alışveriş Yapın </a>
+  </div>
+</header>
+<!--Header End-->
+
+<!--İpad Pro Section Start-->
+<section class="relative bg-black text-white text-center py-10 overflow-hidden">
+  <h1 class="text-5xl font-semibold mb-4">iPad Pro</h1>
+  <p class="text-2xl mb-10">İnanılmaz ince ve güçlü.</p>
+  
+  <div class="mt-10 flex justify-center items-center space-x-6">
+    <a href="https://www.apple.com/tr/ipad-pro/" class="inline-flex items-center justify-center px-8 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-300">
+      Daha Fazla Bilgi</a>
+    
+    <a href="https://www.apple.com/tr/shop/buy-ipad/ipad-pro" class="inline-flex items-center justify-center px-8 py-3 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-300">
+      Satın Alın</a>
+  </div>
+    
+  <div class="w-full h-auto flex justify-center">
+    <img src="../img/sectionipad.png" alt="ipadproimg" class="w-full max-w-[90%] sm:max-w-4xl  h-auto object-contain mx-auto">
+  </div>
+</section>
+<!--İpad Pro Section End-->
+
+<!--İphone Section Start-->
+<section class="relative bg-[#f5f5f7] text-[#1d1d1f] text-center py-10 overflow-hidden">
+  <h1 class="text-5xl font-semibold mb-4">iPhone</h1>
+  <p class="text-2xl mb-10">Karşınızda iPhone 16 ailesi.</p>
+  
+  <div class="mt-10 flex justify-center items-center space-x-6">
+    <a href="https://www.apple.com/tr/iphone/" class="inline-flex items-center justify-center px-8 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-300">
+      Daha Fazla Bilgi</a>
+      
+      <a href="https://www.apple.com/tr/shop/buy-iphone" class="inline-flex items-center justify-center px-8 py-3 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-300">
+        iPhone Satın Alın</a>
+    </div>
+
+    <div class="w-full h-auto flex justify-center">
+      <img src="../img/iphone16.jpg" alt="iphone" class="w-full max-w-[90%] sm:max-w-4xl  h-auto object-contain mx-auto">
+    </div>
+  </section>
+<!--İphone Section End-->
+
+<!--Grid 6 Start-->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-10 px-6 py-12 bg-white">
+
+  <div class="bg-gray-50 rounded-2xl shadow-md p-6 space-y-4 hover:shadow-lg transition duration-300">
+    <h1 class="text-xl font-semibold text-center">MacBook Air</h1>
+    <p class="text-center text-gray-700">Gök mavisi renk.</p>
+    <p class="text-center text-gray-700">M4 çiple göklere çıkan performans.</p>
+    
+    <div class="mt-10 flex justify-center items-center space-x-6">
+      <a href="https://www.apple.com/tr/macbook-air/" class="inline-flex items-center justify-center px-8 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-300">
+        Daha Fazla Bilgi</a>
+      <a href="https://www.apple.com/tr/shop/buy-mac/macbook-air" class="inline-flex items-center justify-center px-8 py-3 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-300">
+        Satın Alın</a>
+    </div>
+    
+    <div class="w-full h-auto flex justify-center">
+      <img src="../img/macbookair.jpg" alt="macbook" class="w-full max-w-[90%] sm:max-w-4xl  h-auto object-contain mx-auto">
+    </div>
+ </div>
+ 
+ <div class="bg-gray-50 rounded-2xl shadow-md p-6 space-y-4 hover:shadow-lg transition duration-300">
+  <h1 class="text-xl font-semibold text-center">iPad <span>Air</span></h1>
+  <p class="text-center text-gray-700">Şimdi M3 çiple süper güçleri var.</p>
+  
+  <div class="mt-10 flex justify-center items-center space-x-6">
+    <a href="https://www.apple.com/tr/ipad-air/" class="inline-flex items-center justify-center px-8 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-300">
+       Daha Fazla Bilgi</a>
+    <a href="https://www.apple.com/tr/shop/buy-ipad/ipad-air" class="inline-flex items-center justify-center px-8 py-3 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-300">
+      Satın Alın</a>
+  </div>
+  
+  <div class="w-full h-auto flex justify-center">
+    <img src="../img/ipadair.jpg" alt="ipad" class="w-full max-w-[90%] sm:max-w-4xl  h-auto object-contain mx-auto">
+  </div>
+ </div>
+
+<div class="bg-gray-50 rounded-2xl shadow-md p-6 space-y-4 hover:shadow-lg transition duration-300">
+  <h1 class="text-xl font-semibold text-center">WATCH</h1>
+  <p class="text-center text-gray-700">SERIES 10</p>
+  <p class="text-center text-gray-700">İncelikle donatıldı.</p>
+  
+  <div class="mt-10 flex justify-center items-center space-x-6">
+    <a href="https://www.apple.com/tr/apple-watch-series-10/" class="inline-flex items-center justify-center px-8 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-300">
+       Daha Fazla Bilgi</a>
+    <a href="https://www.apple.com/tr/shop/buy-watch/apple-watch" class="inline-flex items-center justify-center px-8 py-3 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-300">
+      Satın Alın</a>
+  </div>
+  
+  <div class="w-full h-auto flex justify-center">
+    <img src="../img/watch.jpg" alt="watch" class="w-full max-w-[90%] sm:max-w-4xl  h-auto object-contain mx-auto">
+  </div>
+</div>
+
+<div class="bg-gray-50 rounded-2xl shadow-md p-6 space-y-4 hover:shadow-lg transition duration-300">
+  <div class="w-full h-auto flex justify-center">
+    <img src="../img/airpods4.jpg" alt="airpods4" class="w-full max-w-[90%] sm:max-w-4xl  h-auto object-contain mx-auto">
+  </div>
+
+  <h1 class="text-xl font-semibold text-center">AirPods4</h1>
+  <p class="text-center text-gray-700">İkonik. Şimdi süpersonik.</p>
+  <p class="text-center text-gray-700">Aktif Gürültü Engelleme özelliğiyle.<sup>2</sup></p>
+  
+  <div class="mt-10 flex justify-center items-center space-x-6">
+    <a href="https://www.apple.com/tr/airpods-4/" class="inline-flex items-center justify-center px-8 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-300">
+       Daha Fazla Bilgi</a>
+    <a href="https://www.apple.com/tr/shop/buy-airpods/airpods-4" class="inline-flex items-center justify-center px-8 py-3 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-300">
+      Satın Alın</a>
+    </div>
+  </div>
+
+  <div class="bg-gray-50 rounded-2xl shadow-md p-6 space-y-4 hover:shadow-lg transition duration-300">
+    <h1 class="text-xl font-semibold text-center">MacBook Pro</h1>
+    <p class="text-center text-gray-700">Zeka harikası.</p>
+
+    <div>
+      <a href="https://www.apple.com/tr/macbook-pro/" class="inline-flex items-center justify-center px-8 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-300">
+       Daha Fazla Bilgi</a>
+      <a href="https://www.apple.com/tr/shop/buy-mac/macbook-pro" class="inline-flex items-center justify-center px-8 py-3 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-300">
+      Satın Alın</a>
+    </div>
+    
+    <div class="w-full h-auto flex justify-center">
+      <img src="../img/macbookpro.jpg" alt="macbookpro" class="w-full max-w-[90%] sm:max-w-4xl  h-auto object-contain mx-auto">
+    </div>
+  </div>
+
+  <div class="bg-gray-50 rounded-2xl shadow-md p-6 space-y-4 hover:shadow-lg transition duration-300">
+    <div class="w-full h-auto flex justify-center">
+      <img src="../img/airpodsmax.jpg" alt="airpodsmax" class="w-full max-w-[90%] sm:max-w-4xl  h-auto object-contain mx-auto">
+    </div>
 
 
+  <h1 class="text-xl font-semibold text-center">AirPods Max</h1>
+  <p class="text-center text-gray-700">Her nota bir senfoni.</p>
+  
+  <div class="mt-10 flex justify-center items-center space-x-6">
+    <a href="https://www.apple.com/tr/airpods-max/" class="inline-flex items-center justify-center px-8 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-300">
+       Daha Fazla Bilgi</a>
+    <a href="https://www.apple.com/tr/shop/buy-airpods/airpods-max" class="inline-flex items-center justify-center px-8 py-3 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-300">
+      Satın Alın</a>
+    </div>
+</div>
+</class=>
+<!--Grid 6 End-->
 
+<!--Footer Start-->
+<footer class="bg-[#f5f5f7] text-gray-500 text-sm border-t border-gray-300 text-center">
+  <div class="max-w-6xl mx-auto px-4 py-6 space-y-4 leading-relaxed">
 
+    <p>
+      1. Koşullara uygun müşteriler, kampanya kapsamındaki yerlerden bir Mac veya iPad’i, seçtikleri bir kampanya ürünüyle birlikte satın aldıklarında indirimden yararlanabilirler. Tüm ürünler için ücretlendirme yapılır. Her müşteri için yalnızca bir kampanya ürünü sağlanabilir. Stoklarla sınırlıdır. 
+      <a href="#" class="underline hover:text-gray-700">Detaylar</a>
+    </p>
 
+    <p>
+      2. İki model seçeneği: AirPods 4 ve Aktif Gürültü Engelleme özellikli AirPods 4.
+    </p>
 
+    <p>
+      Özellikler değişebilir. Bazı servisler her bölgede veya her dilde kullanılamayabilir.
+    </p>
 
+    <hr class="border-t border-gray-300 my-4">
 
-
+    <p class="text-center">Bu site Apple’dan ilham alınarak tasarlandı. © 2025 Blessed</p>
+  </div>
+</footer>
+<!--Footer End-->
 
 
 </body>
